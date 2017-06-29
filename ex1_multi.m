@@ -35,8 +35,8 @@ fprintf('Loading data ...\n');
 
 %% Load Data
 data = load('ex1data2.txt');
-X = data(:, 1:2);
-y = data(:, 3);
+X = data(:, 1:2); %Size of house in (Square feet) & No. of bedrooms 
+y = data(:, 3); %Price of house
 m = length(y);
 
 % Print out some data points
@@ -105,6 +105,7 @@ fprintf('\n');
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
 price = 0; % You should change this
+price = [1 1650 3] * theta;
 
 
 % ============================================================
